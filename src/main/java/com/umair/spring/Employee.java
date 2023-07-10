@@ -1,5 +1,6 @@
 package com.umair.spring;
 
+//POJO (Plain old java Object), or Bean or Model
 public class Employee {
     private String name;
     private int id;
