@@ -1,4 +1,3 @@
-Sure! Here's an example of an appropriate and comprehensive `readme.md` file for your Spring project:
 
 # Spring Maven Project - Employee Management
 
