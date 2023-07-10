@@ -7,7 +7,8 @@
 
     <!-- bean definitions here -->
 
-    <bean id="emp1" class="com.umair.spring.Employee">
+<!--    we can also define custom init and destroy methods-->
+    <bean id="emp1" class="com.umair.spring.Employee" init-method="myInit" destroy-method="myDestory">
         <property name="id" value="100"/>
         <property name="name" value="Ali"/>
         <property name="salary" value="2000"/>

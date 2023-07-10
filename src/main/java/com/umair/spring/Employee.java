@@ -6,6 +6,7 @@ public class Employee {
     private int id;
     private int salary;
 
+    // The constructors, setter and getter methods are used by IOC (Inversion of control) or spring core container to create the object
     public Employee(String name, int id, int salary) {
         this.name = name;
         this.id = id;
@@ -37,6 +38,17 @@ public class Employee {
 
     public void setSalary(int salary) {
         this.salary = salary;
+    }
+
+//    custom init method that can we used to initialize the object
+    public void myInit(){
+        System.out.println("My init function called");
+        // other code...
+    }
+
+    // custom destroy methods to perform custom clean  up
+    public void myDestory(){
+        System.out.println("My destroy function called");
     }
 
     @Override

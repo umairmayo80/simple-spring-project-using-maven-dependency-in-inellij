@@ -3,10 +3,6 @@ package com.umair.spring;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args){
@@ -36,6 +32,9 @@ public class Main {
         System.out.println(e1);
         System.out.println(e2);
 
+
+        // The object lifecycle is managed by spring, however we can enforce close
+        ((ClassPathXmlApplicationContext) context).close(); // it will destroy all the objects created,
 
 
     }
